@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diario de Aprendizaje</title>
+    <style>
+        /* Estilos globales */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298); /* Degradado azul más suave */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+            text-align: center;
+        }
+
+        /* Contenedor principal */
+        .container {
+            background-color: rgba(255, 255, 255, 0.85); /* Fondo blanco translúcido */
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* Sombra más suave */
+            border-radius: 20px; /* Bordes más redondeados */
+            padding: 50px;
+            width: 90%;
+            max-width: 650px;
+            backdrop-filter: blur(10px); /* Efecto de difuminado de fondo */
+        }
+
+        /* Estilo del título */
+        h1 {
+            font-size: 3em;
+            font-weight: 700;
+            margin-bottom: 40px;
+            color: #2a5298;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+            letter-spacing: 1px;
+        }
+
+        /* Estilo de la lista */
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin: 20px 0;
+        }
+
+        /* Estilo de los enlaces */
+        a {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #0061f2; /* Azul brillante */
+            padding: 14px 30px;
+            border-radius: 50px;
+            font-size: 1.2em;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+            display: inline-block;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+        }
+
+        a:hover {
+            background-color: #0056e5; /* Azul más oscuro al pasar el ratón */
+            transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+        }
+
+        a:active {
+            transform: translateY(2px); /* Efecto de depresión al hacer clic */
+        }
+
+        /* Animaciones sutiles al cargar */
+        .container {
+            animation: fadeIn 1.2s ease-out;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bienvenido a mi Diario de Aprendizaje</h1>
+        <ul>
+            <li><a href="unidad1.html">Unidad 1</a></li>
+            <li><a href="unidad2.html">Unidad 2</a></li>
+        </ul>
+    </div>
+</body>
+</html>
